@@ -1,0 +1,23 @@
+* \\wsl.localhost\Ubuntu-22.04\home\miqueasgamero\my_files\transresistance_amplifier\amplifier.asc
+XU1 N004 N005 VCC VEE N001 TL081
+R1 N001 N005 {R}
+R2 N001 N004 {R}
+R3 N005 0 {R}
+RL N004 0 10k
+R5 N004 N003 {R}
+V1 N003 0 1
+V2 VCC 0 12
+V3 0 VEE 12
+R6 N002 N008 {R}
+R7 N002 N007 {R}
+R8 N008 0 {R}
+RLL N007 0 10k
+R10 N007 N006 {R}
+V4 N006 0 1
+XU2 N007 N008 VCC 0 N002 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+.param R=10Meg
+.tran 10m
+.lib C:\Program Files\LTC\LTspiceXVII\lib\sub\TL081.sp
+.lib UniversalOpAmp1.lib
+.backanno
+.end
