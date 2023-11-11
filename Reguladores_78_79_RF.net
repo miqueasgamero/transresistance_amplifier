@@ -1,0 +1,17 @@
+* C:\Users\vaale\OneDrive\Escritorio\UNIVERSIDAD\2023\ADCA II\Proyecto\transresistance_amplifier\Reguladores_78_79_RF.asc
+XU1 N002 0 Vout 7812
+V1 N001 0 14 AC 1
+R1 N002 N001 10k
+C1 N002 0 1.59n
+XU2 N004 0 Vout_2 LM7912
+V2 N003 0 14 AC 1
+R2 N004 N003 10k
+C2 N004 0 1.59n
+* .tran 5m
+.ac dec 100 1 1G
+* Respuesta en Frecuencia de los reguladores
+* 7812 (Regulador +)
+* LM7912 (Regulador -)
+.lib C:\Users\vaale\OneDrive\Escritorio\UNIVERSIDAD\2023\ADCA II\Proyecto\transresistance_amplifier\models\regulators.lib
+.backanno
+.end
