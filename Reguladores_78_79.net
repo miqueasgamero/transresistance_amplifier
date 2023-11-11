@@ -1,9 +1,0 @@
-* C:\Users\vaale\OneDrive\Escritorio\UNIVERSIDAD\2023\ADCA II\Proyecto\transresistance_amplifier\Reguladores_78_79.asc
-XU1 N001 0 Vout 7812
-V1 N001 0 14
-XU2 N002 0 Vout_2 LM7912
-V2 N002 0 -14
-.tran 10m
-.lib C:\Users\vaale\OneDrive\Escritorio\UNIVERSIDAD\2023\ADCA II\Proyecto\transresistance_amplifier\models\regulators.lib
-.backanno
-.end
