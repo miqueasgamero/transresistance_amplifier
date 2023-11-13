@@ -61,9 +61,9 @@ R1 13 12 200
 .MODEL DZ5V D(IS=1E-11 RS=7.708 N=1.27 TT=5E-8 CJO=4.068E-10 VJ=0.75
 + M=0.33 BV=4.946 IBV=0.01 )
 .ENDS 78L05
-* LM7805 model. 
+* LM7805 model.
 * No need to use .inc - I've set the .asy symbol to remove the need for .inc.
-* (I used the symbol of LT1084, just replaced the LT1084 by LMxxxx and LTC.LIB by regulators.lib) 
+* (I used the symbol of LT1084, just replaced the LT1084 by LMxxxx and LTC.LIB by regulators.lib)
 
 .SUBCKT LM7805  1    2    3
 * In GND Out
@@ -78,13 +78,13 @@ C2           10  23      4P
 R16          12  5       500
 R12          16  2       12.1K
 QT18         17  23  16  Q_NPN 0.1
-D1           18  19  	 D_D 
+D1           18  19  	 D_D
 R11          20  21      850
 R5           22  3       100
 QT14         24  18  2   Q_NPN 0.1
 R21          6   2       2.67K
 R20          3   6       640
-DZ2          25  26      D_5V1 
+DZ2          25  26      D_5V1
 R19          1   26      16K
 R18          14  3       250M
 R17          25  14      380
@@ -96,7 +96,7 @@ R14          21  24      4K
 C1           27  24      20P
 R13          19  2       4K
 QT13         24  27  18  Q_NPN 0.1
-QT12         20  25  22  Q_NPN 1 
+QT12         20  25  22  Q_NPN 1
 *OFF
 QT11         20  28  2   Q_NPN 0.1
 *OFF
@@ -117,9 +117,9 @@ R1           8   13      7K
 *
 .MODEL D_5V1 D( IS=10F N=1.16 BV=5.1 IBV=0.5M CJ0 = 1P TT = 10p )
 .MODEL D_5V6 D( IS=10F N=1.16 BV=5.6 IBV=5U CJ0 = 1P TT = 10p )
-.MODEL Q_NPN NPN( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P  
+.MODEL Q_NPN NPN( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P
 +       TF=10P TR=1N )
-.MODEL Q_PNP PNP( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P  
+.MODEL Q_PNP PNP( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P
 +      TF=10P TR=1N )
 .MODEL D_D D( IS=1F N=1.16 CJ0 = 1P TT = 10p )
 
@@ -330,25 +330,25 @@ C2           10  23      4P
 R16          12  5       500
 R12          16  2       12.1K
 QT18         17  23  16  Q_NPN 0.1
-D1           18  19  	 D_D 
+D1           18  19  	 D_D
 R11          20  21      850
 R5           22  3       100
 QT14         24  18  2   Q_NPN 0.1
 R21          6   2       2.67K
 R20          3   6       5.22K
-DZ2          25  26      D_5V1 
+DZ2          25  26      D_5V1
 R19          1   26      16K
 R18          14  3       250M
 R17          25  14      380
 R15          25  15      1.62K
 QT16         1   20  15  Q_NPN 1
-QT15         2   24  21  Q_PNP 0.1 
+QT15         2   24  21  Q_PNP 0.1
 *OFF
 R14          21  24      4K
 C1           27  24      20P
 R13          19  2       4K
 QT13         24  27  18  Q_NPN 0.1
-QT12         20  25  22  Q_NPN 1 
+QT12         20  25  22  Q_NPN 1
 *OFF
 QT11         20  28  2   Q_NPN 0.1
 *OFF
@@ -369,9 +369,9 @@ R1           8   13      7K
 *
 .MODEL D_5V1 D( IS=10F N=1.16 BV=5.1 IBV=0.5M CJ0 = 1P TT = 10p )
 .MODEL D_5V6 D( IS=10F N=1.16 BV=5.6 IBV=5U CJ0 = 1P TT = 10p )
-.MODEL Q_NPN NPN( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P  
+.MODEL Q_NPN NPN( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P
 +       TF=10P TR=1N )
-.MODEL Q_PNP PNP( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P  
+.MODEL Q_PNP PNP( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P
 +      TF=10P TR=1N )
 .MODEL D_D D( IS=1F N=1.16 CJ0 = 1P TT = 10p )
 *
@@ -449,25 +449,25 @@ C2           10  23      4P
 R16          12  5       500
 R12          16  2       12.1K
 QT18         17  23  16  Q_NPN 0.1
-D1           18  19  	 D_D 
+D1           18  19  	 D_D
 R11          20  21      850
 R5           22  3       100
 QT14         24  18  2   Q_NPN 0.1
 R21          6   2       2.67K
 R20          3   6       7.18K
-DZ2          25  26      D_5V1 
+DZ2          25  26      D_5V1
 R19          1   26      16K
 R18          14  3       250M
 R17          25  14      380
 R15          25  15      1.62K
 QT16         1   20  15  Q_NPN 1
-QT15         2   24  21  Q_PNP 0.1 
+QT15         2   24  21  Q_PNP 0.1
 *OFF
 R14          21  24      4K
 C1           27  24      20P
 R13          19  2       4K
 QT13         24  27  18  Q_NPN 0.1
-QT12         20  25  22  Q_NPN 1 
+QT12         20  25  22  Q_NPN 1
 *OFF
 QT11         20  28  2   Q_NPN 0.1
 *OFF
@@ -488,20 +488,20 @@ R1           8   13      7K
 *
 .MODEL D_5V1 D( IS=10F N=1.16 BV=5.1 IBV=0.5M CJ0 = 1P TT = 10p )
 .MODEL D_5V6 D( IS=10F N=1.16 BV=5.6 IBV=5U CJ0 = 1P TT = 10p )
-.MODEL Q_NPN NPN( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P  
+.MODEL Q_NPN NPN( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P
 +       TF=10P TR=1N )
-.MODEL Q_PNP PNP( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P  
+.MODEL Q_PNP PNP( IS=10F NF=1.16 NR=1.16 BF=80 CJC=1P CJE=2P
 +      TF=10P TR=1N )
 .MODEL D_D D( IS=1F N=1.16 CJ0 = 1P TT = 10p )
 *
 .ENDS LM7815
 *
-.SUBCKT LM7905  1    2    3            
+.SUBCKT LM7905  1    2    3
 *
-DD4           4   5   D_6V3_0 
-DD2           6   2   D_3V9_0 
-DD1           7   2   D_4V7_0 
-DD3           8   3   D_6V3_0 
+DD4           4   5   D_6V3_0
+DD2           6   2   D_3V9_0
+DD1           7   2   D_4V7_0
+DD3           8   3   D_6V3_0
 C2            9  10  5P
 C1            2   9  15P
 QTU15         10   9   3   Q_PNP_0 1.000
@@ -549,7 +549,7 @@ QTU9          38  35   6   Q_PNP_0 1.000
 R4           39   1  2K
 QTU23         35  34  39   Q_NPN_1 1.000
 QTU16          1   7  35   Q_PNP_0 1.000
-JT1           7   1   1  J_2N3458_N 
+JT1           7   1   1  J_2N3458_N
 QTU14          3  17  23   Q_PNP_0 1.000
 QTU13         17  17  23   Q_PNP_0 1.000
 QTU12         17  17  25   Q_PNP_0 1.000
@@ -563,8 +563,8 @@ R21           2  40  4.29K
 R22          40   3  500
 R23          14   1  500M
 *
-.MODEL J_2N3458_N NJF( VTO=-3.05 BETA=699.53U LAMBDA=6M RD=1 RS=1 
-+      CGD=2.81P CGS=2.91P M=227.1M PB=500M IS=114.41F 
+.MODEL J_2N3458_N NJF( VTO=-3.05 BETA=699.53U LAMBDA=6M RD=1 RS=1
++      CGD=2.81P CGS=2.91P M=227.1M PB=500M IS=114.41F
 +      VTOTC=-2.5M BETATCE=-500M KF=0 AF=1 )
 .MODEL D_6V3_0  D( IS=10F N=1.24 BV=6.3 IBV=1M CJ0 = 1P TT = 10p )
 .MODEL D_3V9_0  D( IS=10F N=1.24 BV=3.9 IBV=1M CJ0 = 1P TT = 10p )
@@ -582,11 +582,11 @@ R23          14   1  500M
 * This is a copy of the LM7905 from regulators.lib.
 * R22 changed from 500 -> 7500
 *
-.SUBCKT LM7912  1    2    3            
-DD4           4   5   D_6V3_0 
-DD2           6   2   D_3V9_0 
-DD1           7   2   D_4V7_0 
-DD3           8   3   D_6V3_0 
+.SUBCKT LM7912  1    2    3
+DD4           4   5   D_6V3_0
+DD2           6   2   D_3V9_0
+DD1           7   2   D_4V7_0
+DD3           8   3   D_6V3_0
 C2            9  10  5P
 C1            2   9  15P
 QTU15         10   9   3   Q_PNP_0 1.000
@@ -634,7 +634,7 @@ QTU9          38  35   6   Q_PNP_0 1.000
 R4           39   1  2K
 QTU23         35  34  39   Q_NPN_1 1.000
 QTU16          1   7  35   Q_PNP_0 1.000
-JT1           7   1   1  J_2N3458_N 
+JT1           7   1   1  J_2N3458_N
 QTU14          3  17  23   Q_PNP_0 1.000
 QTU13         17  17  23   Q_PNP_0 1.000
 QTU12         17  17  25   Q_PNP_0 1.000
@@ -648,8 +648,8 @@ R21           2  40  4.29K
 R22          40   3  7500
 R23          14   1  500M
 
-.MODEL J_2N3458_N NJF( VTO=-3.05 BETA=699.53U LAMBDA=6M RD=1 RS=1 
-+      CGD=2.81P CGS=2.91P M=227.1M PB=500M IS=114.41F 
+.MODEL J_2N3458_N NJF( VTO=-3.05 BETA=699.53U LAMBDA=6M RD=1 RS=1
++      CGD=2.81P CGS=2.91P M=227.1M PB=500M IS=114.41F
 +      VTOTC=-2.5M BETATCE=-500M KF=0 AF=1 )
 .MODEL D_6V3_0  D( IS=10F N=1.24 BV=6.3 IBV=1M CJ0 = 1P TT = 10p )
 .MODEL D_3V9_0  D( IS=10F N=1.24 BV=3.9 IBV=1M CJ0 = 1P TT = 10p )
@@ -668,11 +668,11 @@ R23          14   1  500M
 * This is a copy of the LM7905 from regulators.lib.
 * R22 changed from 500 -> 10.63k
 *
-.SUBCKT LM7915  1    2    3            
-DD4           4   5   D_6V3_0 
-DD2           6   2   D_3V9_0 
-DD1           7   2   D_4V7_0 
-DD3           8   3   D_6V3_0 
+.SUBCKT LM7915  1    2    3
+DD4           4   5   D_6V3_0
+DD2           6   2   D_3V9_0
+DD1           7   2   D_4V7_0
+DD3           8   3   D_6V3_0
 C2            9  10  5P
 C1            2   9  15P
 QTU15         10   9   3   Q_PNP_0 1.000
@@ -720,7 +720,7 @@ QTU9          38  35   6   Q_PNP_0 1.000
 R4           39   1  2K
 QTU23         35  34  39   Q_NPN_1 1.000
 QTU16          1   7  35   Q_PNP_0 1.000
-JT1           7   1   1  J_2N3458_N 
+JT1           7   1   1  J_2N3458_N
 QTU14          3  17  23   Q_PNP_0 1.000
 QTU13         17  17  23   Q_PNP_0 1.000
 QTU12         17  17  25   Q_PNP_0 1.000
@@ -734,8 +734,8 @@ R21           2  40  4.29K
 R22          40   3  10.63k
 R23          14   1  500M
 
-.MODEL J_2N3458_N NJF( VTO=-3.05 BETA=699.53U LAMBDA=6M RD=1 RS=1 
-+      CGD=2.81P CGS=2.91P M=227.1M PB=500M IS=114.41F 
+.MODEL J_2N3458_N NJF( VTO=-3.05 BETA=699.53U LAMBDA=6M RD=1 RS=1
++      CGD=2.81P CGS=2.91P M=227.1M PB=500M IS=114.41F
 +      VTOTC=-2.5M BETATCE=-500M KF=0 AF=1 )
 .MODEL D_6V3_0  D( IS=10F N=1.24 BV=6.3 IBV=1M CJ0 = 1P TT = 10p )
 .MODEL D_3V9_0  D( IS=10F N=1.24 BV=3.9 IBV=1M CJ0 = 1P TT = 10p )
@@ -819,13 +819,13 @@ R38 VOUT 36 0.1
 .MODEL NJ1 NJF (BETA=1E-3 VTO=-3)
 .MODEL DZ60 D (BV=6.0 IBV=1M)
 .MODEL DZ63 D (BV=6.3 IBV=1M)
-.MODEL QN1 NPN (EG=1.22 BF=80 RB=100 CCS=2PF TF=.3NS TR=6NS CJE=3PF   
+.MODEL QN1 NPN (EG=1.22 BF=80 RB=100 CCS=2PF TF=.3NS TR=6NS CJE=3PF
 + CJC=2PF VAF=100)
 .MODEL QP1 PNP (BF=40 RB=20 TF=1NS TR=20NS CJE=6PF CJC=4PF VAF=100)
-.MODEL QP12 PNP () 
-.MODEL QN150 NPN () 
+.MODEL QP12 PNP ()
+.MODEL QN150 NPN ()
 .ENDs
-* This is the best of LMx17's subcicuits, thanks PSpice! 
+* This is the best of LMx17's subcicuits, thanks PSpice!
 * LM117 voltage regulator "macromodel" subcircuit
 * created using Parts release 5.3 on 04/08/93 at 11:33
 *
@@ -968,7 +968,7 @@ Q4 8 5 7 QPL .1
 Q5 81 8 3 QNL .2
 Q6 3 81 10 QPL .2
 Q7 12 81 13 QNL  .2
-Q8 10 5 11 QPL  .2 
+Q8 10 5 11 QPL  .2
 Q9 14 12 10 QPL .2
 Q10 16 5 17 QPL  .2
 Q11 16 14 15 QNL .2
@@ -1045,7 +1045,7 @@ Q4 8 5 7 QPL .1
 Q5 81 8 3 QNL .2
 Q6 3 81 10 QPL .2
 Q7 12 81 13 QNL  .2
-Q8 10 5 11 QPL  .2 
+Q8 10 5 11 QPL  .2
 Q9 14 12 10 QPL .2
 Q10 16 5 17 QPL  .2
 Q11 16 14 15 QNL .2
@@ -1112,71 +1112,71 @@ CBS3 22 3 1PF
 .SUBCKT LM317MOT2  1     2     3
 *Connections     Input  Adj. Output
 *LM317 voltage regulator
-J1 1 3 4 JN 
-Q2 5 5 6 QPL .25   
-Q3 5 8 9 QNL    
-Q4 8 5 7 QPL .25   
-Q5 81 8 3 QNL   
-Q6 3 81 10 QPL  
-Q7 12 81 13 QNL 
-Q8 10 5 11 QPL  
-Q9 14 12 10 QPL 
-Q10 16 5 17 QPL 
+J1 1 3 4 JN
+Q2 5 5 6 QPL .25
+Q3 5 8 9 QNL
+Q4 8 5 7 QPL .25
+Q5 81 8 3 QNL
+Q6 3 81 10 QPL
+Q7 12 81 13 QNL
+Q8 10 5 11 QPL
+Q9 14 12 10 QPL
+Q10 16 5 17 QPL
 Q11 16 14 15 QNL
-Q12 3 20 16 QPL 
-Q13 1 19 20 QNL 
-Q14 19 5 18 QPL 
-Q15 3 21 19 QPL 
+Q12 3 20 16 QPL
+Q13 1 19 20 QNL
+Q14 19 5 18 QPL
+Q15 3 21 19 QPL
 Q16 21 22 16 QPL
-Q17 21 3 24 QNL 
+Q17 21 3 24 QNL
 Q18 22 22 16 QPL
-Q19 22 3 241 QNL 10 
-Q20 3 25 16 QPL 
-Q21 25 26 3 QNL 
-Q22A 35 35 1 QPL 2  
-Q22B 16 35 1 QPL 2 
-Q23 35 16 30 QNL 2 
-Q24A 27 40 29 QNL   
-Q24B 27 40 28 QNL   
-Q25 1 31 41 QNL 40  
-Q26 1 41 32 QNL 200 
-D1 3 4 DZ   
-D2 33 1 DZ  
-D3 29 34 DZ 
-R1 1 6 310  
-R2 1 7 310  
-R3 1 11 190 
-R4 1 17 82  
-R5 1 18 5.6K    
-R6 4 8 125K 
-R7 8 81 130 
-R8 10 12 12.4K  
-R9 9 3 180  
-R10 13 3 4.1K   
-R11 14 3 5.8K   
-R12 15 3 72 
-R13 20 3 5.1K   
-R14 2 24 12K    
-R15 24 241 2.4K 
-R16 16 25 6.7K  
-R17 16 40 12K   
-R18 30 41 160   
-R19 16 31 170   
-R20 26 27 13K   
-R21 27 40 400   
-R22 3 41 160    
-R23 33 34 18K   
-R24 28 29 160   
-R25 28 32 3 
-R26 32 3 .1 
-C1 21 3 30PF    
-C2 21 2 30PF    
-C3 25 26 5PF    
-.MODEL JN NJF(BETA=1E-4 VTO=-7) 
-.MODEL DZ D(BV=6.3) 
-.MODEL QNL NPN(EG=1.22 BF=80 RB=100 CCS=2PF TF=.3NS TR=6NS CJE=3PF  
-+ CJC=2PF VAF=100)   
-.MODEL QPL PNP(BF=40 RB=20 TF=1NS TR=20NS CJE=6PF CJC=4PF VAF=100)   
+Q19 22 3 241 QNL 10
+Q20 3 25 16 QPL
+Q21 25 26 3 QNL
+Q22A 35 35 1 QPL 2
+Q22B 16 35 1 QPL 2
+Q23 35 16 30 QNL 2
+Q24A 27 40 29 QNL
+Q24B 27 40 28 QNL
+Q25 1 31 41 QNL 40
+Q26 1 41 32 QNL 200
+D1 3 4 DZ
+D2 33 1 DZ
+D3 29 34 DZ
+R1 1 6 310
+R2 1 7 310
+R3 1 11 190
+R4 1 17 82
+R5 1 18 5.6K
+R6 4 8 125K
+R7 8 81 130
+R8 10 12 12.4K
+R9 9 3 180
+R10 13 3 4.1K
+R11 14 3 5.8K
+R12 15 3 72
+R13 20 3 5.1K
+R14 2 24 12K
+R15 24 241 2.4K
+R16 16 25 6.7K
+R17 16 40 12K
+R18 30 41 160
+R19 16 31 170
+R20 26 27 13K
+R21 27 40 400
+R22 3 41 160
+R23 33 34 18K
+R24 28 29 160
+R25 28 32 3
+R26 32 3 .1
+C1 21 3 30PF
+C2 21 2 30PF
+C3 25 26 5PF
+.MODEL JN NJF(BETA=1E-4 VTO=-7)
+.MODEL DZ D(BV=6.3)
+.MODEL QNL NPN(EG=1.22 BF=80 RB=100 CCS=2PF TF=.3NS TR=6NS CJE=3PF
++ CJC=2PF VAF=100)
+.MODEL QPL PNP(BF=40 RB=20 TF=1NS TR=20NS CJE=6PF CJC=4PF VAF=100)
 .ENDS   LM317MOT2
 *
 *
@@ -1482,16 +1482,16 @@ Q10 N006 N014 N010 0 N
 Q9 N009 N015 N010 0 N 3.63
 Q7 N004 N006 N003 0 P
 Q8 N007 N009 N003 0 P
-R1 N004 N002 10K 
-R2 N008 N009 24K  
-R3 N008 N006 24k  
-R4 N013 N014 6.6k  
-R5 N014 N015 500 
-R6 ADJ N015 30k  
-R7 N015 N012 6.6k 
-R8 N011 MINUS 720  
+R1 N004 N002 10K
+R2 N008 N009 24K
+R3 N008 N006 24k
+R4 N013 N014 6.6k
+R5 N014 N015 500
+R6 ADJ N015 30k
+R7 N015 N012 6.6k
+R8 N011 MINUS 720
 V1 N016 0 20
-R9 N016 REF 3.6k  
+R9 N016 REF 3.6k
 Q7b N008 N008 REF 0 P
 Q7a N003 N008 REF 0 P
 R10 MINUS 0 1µ
@@ -1547,11 +1547,11 @@ C2 K 6 40p Rser=6k Rpar=400k
 * This TL431 model has been developed from the schematic in the datasheet.
 * It agrees with most of the test circuits and covers
 * Tempco, C-load stability, AC gain, reverse diode, noise, transient, Zout
-*         
-*                 Ref   
+*
+*                 Ref
 *              Catho|de
 *           Anode | |
-*               | | |  
+*               | | |
 .SUBCKT TL431A  A K R
 Q1 N003 N002 N001 0 NPN1 2
 Q2 N002 N002 A 0 NPN1 1
@@ -1626,7 +1626,7 @@ D6 A R Dc
 *SPICE_NET
 .SUBCKT TLV431 6 7 11
 *             A K FDBK
-.MODEL DCLAMP D (IS=13.5N RS=25M N=1.59 
+.MODEL DCLAMP D (IS=13.5N RS=25M N=1.59
 + CJO=45P VJ=.75 M=.302 TT=50.4N BV=36V IBV=1MA)
 .MODEL DCL2 D RS=660K
 V1 1 6 1.24
@@ -1653,10 +1653,10 @@ DKA 6 7 DCLAMP
 *
 *Zetex ZR431L Spice Model v1.0 Last Revised 21/10/05
 *
-*NOTE: This is a simplified model.  Do not rely on this model for 
-*validation of circuit stability.  It does not accurately replicate 
-*stability boundary conditions when the device is operated with 
-*additional load capacitance.  Check the circuit stability by normal 
+*NOTE: This is a simplified model.  Do not rely on this model for
+*validation of circuit stability.  It does not accurately replicate
+*stability boundary conditions when the device is operated with
+*additional load capacitance.  Check the circuit stability by normal
 *breadboarding techniques.
 *
 .SUBCKT ZR431L 1 3 2
@@ -1732,16 +1732,16 @@ C4 R v- 1p
 .model pnp1 PNP(Is=1e-15 BF=100 TF=1e-7 Cjc=0.5e-12 Cje=1e-12 VAF=100 Rb=100 Re=5)
 .ENDS  LM334
 *
-* LM385.sub 
+* LM385.sub
 * V1.01
 * Self made model based on the LT1004-1.2 model.
 * Helmut Sennewald
 *
 * If the circuit has convergence problems,
 * use the following options.
-* .options itl1=500 itl2=500 
+* .options itl1=500 itl2=500
 *
-* The Anode has pin-list order 1 
+* The Anode has pin-list order 1
 *       Reference ______
 *       Cathode _____   |
 *       Anode ____   |  |
