@@ -1,0 +1,40 @@
+* \\wsl.localhost\Ubuntu-22.04\home\miqueasgamero\my_files\transresistance_amplifier\Amplificacor_rta_freq.asc
+V1 Vcc 0 12
+V2 0 Vee 12
+C1 N001 0 50p
+R1 N002 N001 10Meg
+Lx N002 out_LASC 1T
+Cx x_SC N002 1T
+V3 x_SC 0 AC 1
+XU2 0 N001 Vcc Vee out_LASC OPAx209
+C2 in 0 50p
+R2 out_LCSC in 10Meg
+XU1 0 in Vcc Vee out_LCSC OPAx209
+I1 0 in AC 100n
+C3 N003 0 50p
+R3 N004 N003 100k
+Lx1 N005 out_LAC 1T
+Cx1 x_C N005 1T
+V4 x_C 0 AC 1
+XU3 0 N003 Vcc Vee out_LAC OPAx209
+C4 in 0 50p
+R4 out_LCC in 10Meg
+XU4 0 in Vcc Vee out_LCC OPAx209
+I2 0 in AC 100n
+R5 N005 N004 12k
+R6 N004 0 120
+.ac dec 100 0.1 100G uic
+.lib OPAx209.lib
+* Ganancia lazo abierto
+* (sin compensar)
+* (sin compensar)
+* Ganancia lazo cerrado
+* Directivas
+* Fuente
+* Ganancia lazo abierto
+* (compensado)
+* (compensado)
+* Ganancia lazo cerrado
+.lib C:\Program Files\LTC\LTspiceXVII\lib\sub\TL081.sp
+.backanno
+.end
