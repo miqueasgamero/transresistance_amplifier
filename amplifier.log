@@ -1,5 +1,6 @@
 Circuit: * \\wsl.localhost\Ubuntu-22.04\home\miqueasgamero\my_files\transresistance_amplifier\amplifier.asc
 
+Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -23,50 +24,119 @@ Gmin stepping failed
 Starting source stepping with srcstepmethod=0
 Source Step = 3.0303%
 vernier = 0.25
-Source Step = 1.70455%
-Source Step = 3.59848%
-Source Step = 5.49242%
-Source Step = 7.38636%
-Source Step = 9.2803%
-vernier = 0.09375
-Source Step = 11.9318%
-Source Step = 14.7727%
-Source Step = 17.6136%
-Source Step = 20.4545%
-Source Step = 23.2955%
-vernier = 0.140625
-Source Step = 27.1307%
-Source Step = 31.392%
-Source Step = 35.6534%
-Source Step = 39.9148%
-Source Step = 44.1761%
-vernier = 0.210938
-Source Step = 49.7159%
-Source Step = 56.108%
-Source Step = 62.5%
-Source Step = 68.892%
-Source Step = 75.2841%
-vernier = 0.316406
-Source Step = 83.2741%
-Source Step = 92.8622%
+Source Step = 0.520833%
+Source Step = 0.994318%
+Source Step = 1.4678%
+Source Step = 1.94129%
+Source Step = 2.41477%
+vernier = 0.0234375
+Source Step = 3.0303%
+Source Step = 3.74053%
+Source Step = 4.45076%
+Source Step = 5.16098%
+Source Step = 5.87121%
+vernier = 0.0351563
+Source Step = 6.759%
+Source Step = 7.82434%
+Source Step = 8.88968%
+Source Step = 9.95502%
+Source Step = 10.4078%
+Source Step = 10.4744%
+Source Step = 10.541%
+Source Step = 10.6075%
+Source Step = 10.6741%
+vernier = 0.0032959
+Source Step = 10.7474%
+Source Step = 10.8472%
+Source Step = 10.9471%
+Source Step = 11.047%
+Source Step = 11.1469%
+Source Step = 11.2467%
+Source Step = 11.3466%
+Source Step = 11.4465%
+Source Step = 11.5464%
+Source Step = 11.6462%
+vernier = 0.00494385
+Source Step = 11.7861%
+Source Step = 11.9359%
+Source Step = 12.0857%
+Source Step = 12.2355%
+Source Step = 12.3853%
+vernier = 0.00741577
+Source Step = 12.5876%
+Source Step = 12.8123%
+Source Step = 13.037%
+Source Step = 13.2617%
+Source Step = 13.4865%
+vernier = 0.0111237
+Source Step = 13.7786%
+Source Step = 14.1157%
+Source Step = 14.4528%
+Source Step = 14.7898%
+Source Step = 15.1269%
+vernier = 0.0166855
+Source Step = 15.5483%
+Source Step = 16.0539%
+Source Step = 16.5595%
+Source Step = 17.0651%
+Source Step = 17.5707%
+vernier = 0.0250282
+Source Step = 18.1775%
+Source Step = 18.9359%
+Source Step = 19.6944%
+Source Step = 20.4528%
+Source Step = 21.2112%
+vernier = 0.0375423
+Source Step = 22.0834%
+Source Step = 23.2211%
+Source Step = 24.3587%
+Source Step = 25.4964%
+Source Step = 26.634%
+vernier = 0.0563135
+Source Step = 27.8854%
+Source Step = 29.5919%
+Source Step = 31.2984%
+Source Step = 33.0048%
+Source Step = 34.7113%
+vernier = 0.0844703
+Source Step = 36.5031%
+Source Step = 39.0628%
+Source Step = 41.6225%
+Source Step = 44.1822%
+Source Step = 46.7419%
+Source Step = 49.3016%
+vernier = 0.126705
+Source Step = 53.1412%
+Source Step = 56.9807%
+Source Step = 60.8203%
+Source Step = 64.6598%
+Source Step = 68.4994%
+vernier = 0.190058
+Source Step = 74.0668%
+Source Step = 79.8261%
+Source Step = 85.5854%
+Source Step = 91.3448%
+Source Step = 97.1041%
+vernier = 0.285087
+Source Step = 100%
 Source stepping succeeded in finding the operating point.
 
 
-Date: Tue Nov 21 18:36:09 2023
-Total elapsed time: 0.651 seconds.
+Date: Wed Nov 22 17:22:06 2023
+Total elapsed time: 3.709 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 6048
-traniter = 3458
-tranpoints = 1586
-accept = 1425
-rejected = 161
-matrix size = 297
-fillins = 576
+totiter = 8318
+traniter = 3248
+tranpoints = 1501
+accept = 1369
+rejected = 132
+matrix size = 234
+fillins = 1020
 solver = Normal
-Thread vector: 13.6/6.8[7] 3.0/2.0[7] 4.9/1.9[7] 0.8/1.2[1]  2592/500
-Matrix Compiler1: 45.37 KB object code size  10.0/3.3/[2.3]
-Matrix Compiler2: 35.47 KB object code size  2.5/2.6/[1.6]
+Thread vector: 36.0/21.8[4] 12.1/8.7[4] 15.6/10.7[4] 2.0/6.2[1]  2592/500
+Matrix Compiler1: 104.89 KB object code size  35.2/10.8/[9.9]
+Matrix Compiler2: 38.58 KB object code size  8.3/9.7/[5.2]
 

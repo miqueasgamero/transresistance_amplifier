@@ -1,26 +1,32 @@
 * \\wsl.localhost\Ubuntu-22.04\home\miqueasgamero\my_files\transresistance_amplifier\amplifier.asc
-XU1 load N003 Vcc Vee N001 TL081
-R1 N001 N003 {R}
-R2 N001 load {R}
-R3 N003 0 {R}
-R5 load N002 {R}
-V1 N002 0 PULSE(0 1 0 1p 1p 9m 10m)
-V2 Vcc 0 12
-V3 0 Vee 12
-C1 load 0 50p
-Rf out_X load 10Meg
-XU2 0 load Vcc Vee out_X OPAx209
-C2 load 0 50p
-XU3 0 load Vcc Vee out_Y OPAx209
-R4 P001 load 100k
-R6 out_Y P001 120k
-R7 P001 0 120
+XU1 N003 N004 V+ V- N001 TL081
+R1 N001 N004 10k
+R§ZL N001 N003 {R}
+R3 N004 0 10k
+R5 N003 N002 {R}
+V1 N002 0 PULSE(0 5 0 1p 1p 9m 10m)
+C2 N003 0 50p
+XU3 0 N003 V+ V- N010 OPAx209
+Rf P001 N003 100k
+Ra N010 P001 12k
+Rb P001 0 120
+XU2 0 N007 V+ V- out TL081
+R8 N007 N010 10k
+Rf_inv out N007 10k
+XU4 N009 0 V+ 7812
+V4 N008 0 14
+XU5 N006 NC_01 V- LM7912
+R2 N009 N008 50
+C1 N009 0 0.33µ
+C3 V+ 0 0.22µ
+R4 N006 N005 50
+V5 N005 0 -14
+C4 N006 0 0.33µ
+C5 V- 0 0.22µ
 .param R=10Meg
 .tran 10m
 .lib OPAx209.lib
-* Fuente de corriente Howlland
-* Amplificador de corriente
-* Amplificador de corriente
+.lib \\wsl.localhost\Ubuntu-22.04\home\miqueasgamero\my_files\transresistance_amplifier\models\regulators.lib
 .lib C:\Program Files\LTC\LTspiceXVII\lib\sub\TL081.sp
 .backanno
 .end
