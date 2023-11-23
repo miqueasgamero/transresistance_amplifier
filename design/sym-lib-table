@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "OPA209")(type "KiCad")(uri "${KIPRJMOD}/OPA209/2023-11-23_12-28-45.kicad_sym")(options "")(descr ""))
+)
