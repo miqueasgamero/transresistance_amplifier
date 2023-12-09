@@ -2,8 +2,8 @@ Circuit: * C:\Users\vaale\OneDrive\Escritorio\UNIVERSIDAD\2023\ADCA II\Proyecto\
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Thu Nov 23 13:44:34 2023
-Total elapsed time: 0.171 seconds.
+Date: Sun Dec  3 17:47:17 2023
+Total elapsed time: 0.174 seconds.
 
 tnom = 27
 temp = 27
@@ -17,6 +17,6 @@ matrix size = 29
 fillins = 32
 solver = Normal
 Avg thread counts: 1.5/1.9/1.9/1.5
-Matrix Compiler1: 2.84 KB object code size  2.6/3.0/[1.1]
-Matrix Compiler2: 2.88 KB object code size  1.3/2.1/[1.1]
+Matrix Compiler1: 2.84 KB object code size  2.4/1.3/[1.1]
+Matrix Compiler2: 2.88 KB object code size  1.4/1.5/[0.9]
 

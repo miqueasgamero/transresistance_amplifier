@@ -1,4 +1,4 @@
-Circuit: * \\wsl.localhost\Ubuntu-22.04\home\miqueasgamero\my_files\transresistance_amplifier\amplifier.asc
+Circuit: * C:\Users\vaale\OneDrive\Escritorio\UNIVERSIDAD\2023\ADCA II\Proyecto\transresistance_amplifier\amplifier.asc
 
 V1: both pins shorted together -- ignoring.
 Early termination of direct N-R iteration.
@@ -15,8 +15,8 @@ vernier = 0.015625
 vernier = 0.0078125
 Gmin = 6.72377
 vernier = 0.00390625
-vernier = 0.00195313
-vernier = 0.000976563
+vernier = 0.00195312
+vernier = 0.000976562
 vernier = 0.000488281
 Gmin = 6.72131
 Gmin = 0

@@ -1,4 +1,4 @@
-Circuit: * \\wsl.localhost\Ubuntu-22.04\home\miqueasgamero\my_files\transresistance_amplifier\Amplificacor_rta_freq.asc
+Circuit: * C:\Users\vaale\OneDrive\Escritorio\UNIVERSIDAD\2023\ADCA II\Proyecto\transresistance_amplifier\Amplificacor_rta_freq.asc
 
 Direct Newton iteration for .op point succeeded.
 .step c=1e-009
