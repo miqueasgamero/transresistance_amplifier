@@ -1,9 +1,6 @@
-Circuit: * \\wsl.localhost\Ubuntu-22.04\home\miqueasgamero\my_files\transresistance_amplifier\Amplificacor_rta_freq.asc
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Mon Nov 27 12:16:20 2023
-Total elapsed time: 0.670 seconds.
 
 tnom = 27
 temp = 27
@@ -14,7 +11,8 @@ tranpoints = 0
 accept = 0
 rejected = 0
 matrix size = 547
-fillins = 602
+fillins = 677
 solver = Normal
-Matrix Compiler1:    3552 opcodes
-Matrix Compiler2: 56.68 KB object code size
+Avg thread counts: 12.0/0.0/12.0/1.8
+Matrix Compiler1:    3664 opcodes
+Matrix Compiler2: 58.04 KB object code size

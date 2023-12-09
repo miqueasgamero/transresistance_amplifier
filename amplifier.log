@@ -1,5 +1,7 @@
-Circuit: * \\wsl.localhost\Ubuntu-22.04\home\miqueasgamero\my_files\transresistance_amplifier\amplifier.asc
+Circuit: * C:\Users\vaale\OneDrive\Escritorio\UNIVERSIDAD\2023\ADCA II\Proyecto\transresistance_amplifier\amplifier.asc
 
+WARNING: Less than two connections to node nc_01.  This node is used by rf1.
+WARNING: Less than two connections to node nc_02.  This node is used by ra1.
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -14,8 +16,8 @@ vernier = 0.015625
 vernier = 0.0078125
 Gmin = 5.49501
 vernier = 0.00390625
-vernier = 0.00195313
-vernier = 0.000976563
+vernier = 0.00195312
+vernier = 0.000976562
 vernier = 0.000488281
 Gmin = 5.50104
 Gmin = 0
@@ -23,54 +25,28 @@ Gmin stepping failed
 
 Starting source stepping with srcstepmethod=0
 Source Step = 3.0303%
-vernier = 0.25
-Source Step = 0.520833%
-Source Step = 0.994318%
-Source Step = 1.4678%
-Source Step = 1.94129%
-Source Step = 2.41477%
-vernier = 0.0234375
-Source Step = 3.0303%
-Source Step = 3.74053%
-Source Step = 4.45076%
-Source Step = 5.16098%
-Source Step = 5.87121%
-vernier = 0.0351563
-Source Step = 6.759%
-Source Step = 7.82434%
-Source Step = 8.88968%
-Source Step = 9.95502%
-Source Step = 10.1082%
-Source Step = 10.1747%
-Source Step = 10.2413%
-Source Step = 10.3079%
-Source Step = 10.3745%
-Source Step = 10.4411%
-vernier = 0.0032959
-Source Step = 10.541%
-Source Step = 10.6408%
-Starting source stepping with srcstepmethod=1
-Source Step = 3.0303%
-vernier = 0.25
-Source stepping failed
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
 
-Pseudo Transient succeeded in finding the operating point at 27.8183 s.
+Heightened Def Con from 0.009 to 0.009
 
-Date: Sat Nov 25 17:21:29 2023
-Total elapsed time: 2.159 seconds.
+Date: Sat Dec  9 17:43:04 2023
+Total elapsed time: 2.231 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 11570
-traniter = 3049
-tranpoints = 1438
-accept = 1314
-rejected = 155
-matrix size = 233
-fillins = 863
+totiter = 15683
+traniter = 13975
+tranpoints = 6781
+accept = 5172
+rejected = 1610
+matrix size = 124
+fillins = 896
 solver = Normal
-Thread vector: 21.7/8.2[4] 4.8/2.8[4] 6.5/3.4[4] 0.8/1.2[1]  2592/500
-Matrix Compiler1: 91.25 KB object code size  14.1/4.3/[4.1]
-Matrix Compiler2: 35.24 KB object code size  2.9/3.4/[1.5]
+Avg thread counts: 1.1/1.1/1.1/1.1
+Matrix Compiler1: 111.90 KB object code size  42.7/24.4/[17.7]
+Matrix Compiler2: 26.42 KB object code size  10.0/7.0/[4.0]
 
